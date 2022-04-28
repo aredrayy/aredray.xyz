@@ -30,6 +30,9 @@
   </script>
 
   <style>
+	body {
+		background-image: url("bg.gif");
+	}
 	#video-container {
 	    top:0%;
 	    left:0%;
@@ -54,17 +57,19 @@
 	  text-decoration: none;
 	  border-radius: 50%;
 	}
+
+	.img-shadow {
+	filter: brightness(80%);
+	filter: contrast(80%);
+	filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+	}
 	
   </style>
   
 </head>
 <body>
 	<div id="wrapper">
-		<!-- Background -->
 		<div class="video-container">
-			<video autoplay muted loop id="videoBG">
-				<source src="Background.mp4" type="video/mp4" center fixed>
-			</video>	
 			<div id="background" style="opacity: 0.1"></div>
 			<div id="bg" class="bg-animation">
 				<div id="stars"></div>
@@ -73,12 +78,11 @@
 				<div id="stars4"></div>
 			</div>
 		</div>
-
 		<div class="front">
 			<section class="menu1 menu cid-r7o5P124fx" once="menu" id="menu1-1">
 				<nav class="navbar navbar-dropdown navbar-expand-lg">
 					<div class="navbar-brand">
-						<img src="https://yt3.ggpht.com/Fvxl9EkyD90Q7tAdX38YoBNuFNWQbtgWs1T_qwElCATKLzZxfGw8shqGshLYJaecfRmSuomdsw=s108-c-k-c0x00ffffff-no-rj" style="margin-right: 15px;width: 45px;height: 45px;">
+						<img src="https://i.ibb.co/8gxkxhP/round-logo.png" class="img-shadow" style="margin-right: 15px;width: 45px;height: 45px;">
 						<span class="navbar-caption-wrap mbr-section-btn"><a class="navbar-caption text-white display-7" href="https://aredray.xyz/">Aredray.xyz
 							</a></span>
 					</div>
@@ -93,16 +97,16 @@
 				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav nav-dropdown mbr-section-btn nav-right" data-app-modern-menu="true">
 							<li class="nav-item">
-								<a class="nav-link link text-white display-7" href="https://www.youtube.com/channel/UCZb0aeisUI7x8DFvNvb9Uug">Youtube Channel</a>
+								<a class="nav-link link text-white display-7" href="https://www.youtube.com/watch?v=b8wkGMjyBNc">Channel Intro</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link link text-white display-7" href="https://discord.io/aredray">Discord</a>
+								<a class="nav-link link text-white display-7" href="https://www.youtube.com/watch?v=IogMISUMWqA">Thumbnail Pack</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link link text-white display-7" href="https://rekonise.com/pastebin-password-s4rc0">Password</a>
+								<a class="nav-link link text-white display-7" href="https://www.youtube.com/watch?v=edW6fFea4Ww">Best Microsoft Store Apps</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link link text-white display-7" href="https://www.youtube.com/watch?v=gjOwsxzGYtY">Download Tutorial</a>
+								<a class="nav-link link text-white display-7" href="https://www.youtube.com/watch?v=0_wwtkNYkOY">Download Tutorial</a>
 							</li>
 						</ul>         
 				  </div>
@@ -126,13 +130,17 @@
 						<a class="btn btn-lg btn-danger display-4" href="https://www.youtube.com/channel/UCjBAN5YKkH7jtfw2ZvVSkVQ">YOUTUBE</a>
 						<a class="btn btn-lg btn-primary display-4" href="https://discord.io/aredray">DISCORD</a>
 						<a class="btn btn-lg btn-secondary display-4" href="https://steamcommunity.com/id/aredray/">STEAM</a></div>
+						<div class="mbr-section-btn align-center pb-4">
+							<h1 class="mbr-section-subtitle mbr-fonts-style align-center mbr-white display-4">Latest Video:</h1>
+							<div class="underline align-center pb-3">
+
+							</div>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/3MW6rFOIFO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>	
 					</div>	
-				
 			</section>	
-		</div>
+		</div>	
 	</div>
-
-
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
