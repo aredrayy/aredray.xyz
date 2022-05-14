@@ -63,6 +63,32 @@
 	filter: contrast(80%);
 	filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
 	}
+
+	@media only screen and (max-device-width: 991px)
+ 	{
+		.iframe-container {
+		overflow: hidden;
+		/* 16:9 aspect ratio */
+		padding-top: 56.25%;
+		position: relative;
+		}
+		.iframe-container iframe {
+		border: 0;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		}
+	}
+
+	@media only screen and (min-device-width: 1000px)
+ 	{
+		.iframe-container iframe {
+			width: 560px;
+			height: 315px;
+		}
+	}
 	
   </style>
   
@@ -130,11 +156,13 @@
 						<a class="btn btn-lg btn-danger display-4" href="https://www.youtube.com/channel/UCjBAN5YKkH7jtfw2ZvVSkVQ">YOUTUBE</a>
 						<a class="btn btn-lg btn-primary display-4" href="https://discord.io/aredray">DISCORD</a>
 						<a class="btn btn-lg btn-secondary display-4" href="https://steamcommunity.com/id/aredray/">STEAM</a></div>
-						<div class="mbr-section-btn align-center pb-4">
+						<div class="align-center muie" style="max-width: 560; max-height: 315">
 							<h1 class="mbr-section-subtitle mbr-fonts-style align-center mbr-white display-4">Latest Video:</h1>
 							<div class="underline align-center pb-3">
 							</div>
-							<iframe width="460" height="260" src="https://www.youtube.com/embed/3MW6rFOIFO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<div class="iframe-container">
+								<iframe src="https://www.youtube.com/embed/kpRPnB0IfCQ" allowfullscreen></iframe>
+							</div>						
 						</div>	
 					</div>	
 			</section>	
